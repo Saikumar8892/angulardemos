@@ -1,0 +1,15 @@
+<button
+  class="btn btn-primary"
+  [disabled]="!allowNewProduct"
+  (click)="onCreateProduct()"
+>
+  Add Product
+</button>
+
+<p>{{ productCreationStatus }}</p>
+
+<label>Product Name</label>
+<input type="text" class="form-control" [(ngModel)]="productName" />
+<p>{{ productName }}</p>
+
+<app-product></app-product>

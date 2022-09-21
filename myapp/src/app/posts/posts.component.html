@@ -1,0 +1,57 @@
+<div class="container m-2 border justify-center" style="width: 400px">
+    <form #f="ngForm">
+      <div class="row m-3">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            id="title"
+            class="form-control"
+            name="title"
+            ngModel
+            required
+          />
+        </div>
+      </div>
+      <div class="row m-3">
+        <div class="form-group">
+          <div class="col">
+            <label for="content">Content</label>
+          </div>
+          <div class="col">
+            <textarea
+              id="content"
+              name="content"
+              ngModel
+              required
+              cols="45"
+              rows="8"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row m-3">
+        <div class="col">
+          <button
+            class="btn btn-primary btn-sm"
+            [disabled]="!f.valid"
+            (click)="createPost(f.value, f)"
+          >
+            Send Post
+          </button>
+        </div>
+      </div>
+      <div class="row m-3">
+        <div class="col">
+          <button class="btn btn-primary btn-sm" (click)="onFetchPosts()">
+            Fetch Posts
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn btn-danger btn-sm" (click)="onDeletePosts()">
+            Clear Posts
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>

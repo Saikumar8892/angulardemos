@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+runtimes=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<runtimes>\r\n  <runtime id\="apache-tomcat-4.1.40" location\="C\:/JavaFSD Practice/apache-tomcat-4.1.40" name\="apache-tomcat-4.1.40" runtime-type-id\="org.eclipse.jst.server.tomcat.runtime.41" timestamp\="0"/>\r\n</runtimes>\r\n
